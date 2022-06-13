@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap');
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif;
+  line-height: 1.5;
+}
+/* animation */
+@keyframes fadeIn{
+  from{
+      opacity: 0;
+      transform: translateY(50px);
+  }
+  to{
+      opacity: 1;
+  }
+}
+
+
+--root { 
+  --dark: rgba(0, 0, 0, 0.5);
+  --black: #333333;
+}
+
+
+a{
+  text-decoration: none;
+  color: #333333;
+}
+
+body{
+  height: 3000px;
+}
+
+header {
+  height: 60px;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 48px;
+  z-index: 300;
+  border-bottom: 1px solid #ebebeb;
+  background-color: #1852FD;
+  transition: all .3s ease-in;
+
+
+}
+
+header.down {
+  background-color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  display: flex;
+  flex: 1 0 0;
+  align-items: center;
+}
+
+.streamZM {
+  display: flex;
+  align-items: center;
+  line-height: 100%;
+}
+
+.navButton {
+  display: flex;
+  flex: 1 0 0;
+  justify-content: flex-end;
+  align-items: center;  
+}
+
+header .navButton a{
+  margin: 0 0 0 32px;
+  text-decoration: none;
+  color: var(--black);
+  
+}
+
+.container {
+  margin: 156px auto 96px auto;
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap');
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif;
+  line-height: 1.5;
+}
+
+
+--root { 
+  --dark: rgba(0, 0, 0, 0.5);
+  --black: #333333;
+}
+
+
+a{
+  text-decoration: none;
+  color: #333333;
+}
+
+
+
+header {
+  height: 60px;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 48px;
+  z-index: 300;
+  border-bottom: 1px solid #ebebeb;
+  background-color: #1852FD;
+  transition: all .3s ease-in;
+
+
+}
+
+header.down {
+  background-color: white;
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  display: flex;
+  flex: 1 0 0;
+  align-items: center;
+}
+
+.streamZM {
+  display: flex;
+  align-items: center;
+  line-height: 100%;
+}
+
+.navButton {
+  display: flex;
+  flex: 1 0 0;
+  justify-content: flex-end;
+  align-items: center;  
+}
+
+header .navButton a{
+  margin: 0 0 0 32px;
+  text-decoration: none;
+  color: var(--black);
+  
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  margin: 155px auto 96px auto;
+  gap: 60px;
+}
+
+.items {
+  display: flex;
+  width: 360px;
+  height: 360px;
+  position: relative;
+  overflow: hidden;
+}
+
+.info {
+  width: 100%;
+  position: absolute;
+  transform: translate(-50%);
+  left: 50%;
+  height: 100%;
+  text-align: center;
+  opacity: 0;
+}
+
+.info h1{
+  color: white;
+  line-height: 54px;
+  display: inline-block;
+  margin-top: 306px;
+  width: 100%;
+  background-color: #00000090;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.items:hover .info {
+  opacity: 1;
+  transition: all 0.3s ease;
+
+}
+
+.items:hover .thumbnail{
+  transform: scale(1.1);
+  transition: all .3s ease;
+}

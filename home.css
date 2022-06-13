@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap');
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif;
+  line-height: 1.5;
+}
+/* animation */
+@keyframes fadeIn{
+  from{
+      opacity: 0;
+      transform: translateY(50px);
+  }
+  to{
+      opacity: 1;
+  }
+}
+
+a{
+  text-decoration: none;
+  color: #333333;
+}
+/* 높이 측정용  */
+body{
+  height: 3000px;
+}
+
+header {
+  height: 60px;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 48px;
+  z-index: 300;
+  border-bottom: 1px solid #ebebeb;
+  background-color: #1852FD;
+  transition: all .3s ease-in;
+
+
+}
+
+header.down {
+  background-color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1 0 0;
+  align-items: center;
+}
+
+.navButton {
+  display: flex;
+  flex: 1 0 0;
+  justify-content: flex-end;
+  align-items: center;  
+  
+}
+
+header .navButton a{
+  margin: 0 0 0 32px;
+  text-decoration: none;
+  transition: all .3s ease-in;
+  z-index: 100;
+}
+
+.movelogo {
+  transform-origin: top left;
+  z-index: -1;
+}
+
+
+
+.movelogo.scrolled{
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  width: 1200px;
+  margin-top: 60px;
+  translate: all 1s ease-in;
+}
+
+.container {
+  width: 1200px;
+  margin: 369px auto 0 auto;
+}
+
+
+section.hero {
+  margin-top: 96px;
+}
+
+section.hero h2{
+  font-size: 24px;
+  font-weight: 400;
+  color: #333333;
+  padding: 48px;
+}
+
+p{
+  font-weight: 100;
+  font-size: 16px;
+  color: #333333;
+}
+
+h3{
+  font-weight: 400;
+  font-size: 24px;
+  color: #333333;
+}
+
+.text {
+  margin: 96px 0 32px 0;
+  color: #333333;
+}
+
+
+
+
+
+section.Logoimg {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+
+.hero2{
+  width: 1000px;
+  margin: 0 auto 0 auto;
+  display: flex;
+}
+
+section.content{
+  margin: 96px 0 96px 0;
+  display: flex;
+}
+
+#hlogo {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,30%);
+
+}
+
+
+
+section.content div.info{
+  flex: 0 0 356px;
+  align-items: center;
+  margin-left: 72px;
+}
+
+
+
+section.content:nth-child(2n-1){
+  flex-direction: row-reverse;
+}
+
+section.content:nth-child(2n-1) div.info{
+  margin: 0 72px 0 0;
+}

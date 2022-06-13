@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap');
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif;
+  line-height: 1.5;
+}
+
+--root { 
+  --dark: rgba(0, 0, 0, 0.5);
+  --black: #333333;
+  --blue: #1852FD;
+}
+
+
+a{
+  text-decoration: none;
+  color: #333333;
+}
+
+body{
+  height: 720px;
+}
+
+header {
+  height: 60px;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 48px;
+  z-index: 1;
+  border-bottom: 1px solid #ebebeb;
+  background-color: white;
+
+}
+
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  display: flex;
+  flex: 1 0 0;
+  align-items: center;
+}
+
+.streamZM {
+  display: flex;
+  align-items: center;
+  line-height: 100%;
+}
+
+.navButton {
+  display: flex;
+  flex: 1 0 0;
+  justify-content: flex-end;
+  align-items: center;  
+}
+
+header .navButton a{
+  margin: 0 0 0 32px;
+  text-decoration: none;
+  color: var(--black);
+  
+}
+
+.container{
+
+  width: 1200px;
+  display: flex;
+  margin: 156px auto 0 auto;
+  justify-content: space-between;
+
+}
+
+section {
+  width: 488px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inputBundle {
+  margin-top: 16px;
+}
+
+input{
+  margin-top: 8px;
+  width: 488px;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid #333333;
+}
+
+.input h2{
+  margin-top: 16px;
+  color: #333333;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+
+.button {
+  width: 488px;
+  height: 64px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #1852FD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+  color:white;
+}
+
+section h1{
+  margin-bottom: 32px;
+}
+
+.icon {
+  display: flex;
+  justify-content: space-between;
+  width: 288px;
+  margin-top: 32px;
+}
